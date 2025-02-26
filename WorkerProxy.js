@@ -2,7 +2,7 @@ addEventListener('fetch', event => {
   event.respondWith(handleRequest(event.request))
 })
 
-const myURL = new URL(event.env.SERVER_URL)
+const myURL = new URL('https://cwp.777000.best/')
 
 async function handleRequest(request) {
   const url = new URL(request.url)
